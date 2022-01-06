@@ -9,7 +9,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: url("img/winter1.jfif") no-repeat center center fixed;
+  background: url("../img/winter1.jfif") no-repeat center center fixed;
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -62,4 +62,54 @@ body {
   font-size: 48px;
   color: #fff;
   line-height: 140px;
+}
+@media screen and (max-width:640px) {
+  .time-second {
+    grid-area: second;
+  }
+  .time-second-text {
+    grid-area: second-text;
+  }
+  .time-minutes {
+    grid-area: minutes;
+  }
+  .time-minutes-text {
+    grid-area: minutes-text;
+  }
+  .time-hourse-text {
+    grid-area: hourse-text;
+  }
+  .time-hourse {
+    grid-area: hourse;
+  }
+  .time-days {
+    grid-area: days;
+  }
+  .time-days-text {
+    grid-area: days-text;
+  }
+  .time-mounth {
+    grid-area: mounth;
+  }
+  .time-mounth-text {
+    grid-area: mounth-text;
+  }
+  .time-now {
+    grid-template-columns: 1fr 1fr ;
+    grid-template-areas: 'second second'
+                          'second-text second-text'
+                          'minutes minutes'
+                          'minutes-text minutes-text'
+                          'hourse hourse'
+                          'hourse-text hourse-text'
+                          'days days'
+                          'days-text days-text'
+                          'mounth mounth'
+                          'mounth-text mounth-text';
+  }
+}
+@media screen and (max-width:340px) {
+  .new-year {
+    font-size: 40px;
+  }
 }
